@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transform</title>
+	<!--
+    fungsi transformasi
+    scale=memperbesar/memperkecil
+    rotate=memutar
+    skew=membuat condong/miring
+    translate=mengubah posisi
+	//-->
+	<style type="text/css">
+		.kotak{
+			width:200px;
+			height:200px;
+			background-color:lightblue;
+			margin:50px auto;
+			border-radius:50%;
+			overflow:hidden;
+			transition:1s;
+		}
+		.container:hover .kotak{
+			transform:translate(500px);
+		}
+		img{
+			width:200px;
+			height:200px;
+		}
+		p{
+			font-size:20px;
+			text-align:justify;
+		}
+		/*scale(angka),scaleX(angka),scaleY(angka)
+          rotate(deg),rotateX(deg),rotateY(deg)
+          skew(deg),skewX(deg),skewY(deg)
+          translate(px),translateX(px),translateY(px)
+		*/
+	</style>
+</head>
+<body>
+<div class="container"><div class="kotak"><img src="bidadari.jpg"></div></div><br><br>	
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</body>
+</html>

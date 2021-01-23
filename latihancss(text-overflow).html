@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+ <title>text overflow</title>
+<style>
+/*
+CSS Text Overflow
+Properti CSS teks-meluap menentukan bagaimana konten meluap yang tidak ditampilkan harus diisyaratkan kepada pengguna.
+Itu dapat dipotong:
+*/
+p.contoh1{
+white-space:nowrap;
+width:200px;
+border:1px solid black;
+overflow:hidden;
+text-overflow:clip;
+}
+p.contoh2{
+white-space:nowrap;
+width:200px;
+border:1px solid black;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+</style>
+</head>
+<body>
+	<h1>Text overflow property</h1>
+	<p>Dua paragraf berikut berisi teks panjang yang tidak akan muat di dalam kotak.</p>
+	<h2>Text overflow clip:</h2>
+	<p class="contoh1">
+	This is some long text that will not fit in the box</p>
+	<h2>Text overflow ellipsis:</h2>
+	<p class="contoh2">This is some long text that will not fit in the box</p>
+</body>

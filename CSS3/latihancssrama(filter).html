@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter</title>
+   <!--
+   	blur(px)=burem,
+   	brightness(angka | %)=gelap/terang, 
+   	contrast(angka | %)=sama seperti brigthness, 
+   	saturate(angka | %)=saturasi/berwarna, 
+   	grayscale(angka | %)=kebalikan dari saturate, 
+   	sepia(angka | %)=gambar akan manjadi berwarna kuning,
+   	hue-rotate(deg)=roda warna
+   	invert(angka | %)=negatif film,
+   	opacity(angka | %),
+   	drop-shadow(sama seperti box-shadow).
+   //-->
+	<style type="text/css">
+	body{
+		text-align:center;
+	}
+		img{-moz-filter:saturate(50%);
+			filter:saturate(100%);
+		}
+	</style>
+</head>
+<body>
+<img src="bidadari.jpg">
+</body>
+</html>

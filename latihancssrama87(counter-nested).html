@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Counter nested</title>
+<style type="text/css">
+/*
+Penghitung yang Bersarang
+
+Contoh berikut membuat satu penghitung untuk halaman (bagian) dan satu penghitung untuk setiap elemen <h1> (subbagian). Penghitung "bagian" akan dihitung untuk setiap elemen <h1> dengan "Bagian <nilai penghitung bagian>.", Dan penghitung "subbagian" akan dihitung untuk setiap elemen <h2> dengan "<nilai penghitung bagian >. <nilai penghitung ayat> ":
+*/
+body{
+counter-reset:section;
+}
+h1{
+counter-reset:subsection;
+}
+h1::before{
+counter-increment:section;
+content:"Section "counter(section)".";
+}
+h2::before{
+counter-increment:subsection;
+content:counter(section)"."counter(subsection)" ";
+}
+</style>
+</head>
+<body>
+<h1>HTML Tutorials:</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+
+<h1>Scripting tutorials</h1>
+<h2>Javascript</h2>
+<h2>VBScript</h2>
+
+<h1>XML tutorials:</h1>
+<h2>XML</h2>
+<h2>XSL</h2>
+<p> <b> Catatan: </b> IE8 mendukung properti ini hanya jika! DOCTYPE ditentukan. </p>
+
+</body>
+</html>
+

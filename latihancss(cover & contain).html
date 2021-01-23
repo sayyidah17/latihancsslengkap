@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Latihan css</title>
+<style>
+/*
+Dua kemungkinan nilai lain untuk ukuran latar belakang adalah isi dan penutup.
+
+Kata kunci yang mengandung mengubah skala gambar latar menjadi sebesarmungkin 
+(tetapi lebar dan tingginya harus pas di dalam area konten). 
+Karena itu, tergantung pada proporsi gambar latar belakang dan area pemosisian latar belakang, 
+mungkin ada beberapa area latar belakang yang tidak tercakup oleh gambar latar belakang.
+
+Kata kunci sampul menskala gambar latar belakang sehingga area konten benar-benar tertutup oleh gambar 
+latar belakang (baik lebar dan tingginya sama dengan atau melebihi area konten). Dengan demikian, 
+beberapa bagian gambar latar belakang mungkin tidak terlihat di area penentuan posisi latar belakang.*/
+#div1{
+background:url('Bg.jpg');
+background-size:contain;
+background-repeat:no-repeat;
+}
+#div2{
+background:url('Bg.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+}
+</style>
+ </head>
+ <body
+<div id="div1">
+<h1>Background-size:contain;</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div><br><br><br><br><br><br>
+<div id="div2">
+<h1>Background-size:cover;</h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+ </body>
+</html>
+
+

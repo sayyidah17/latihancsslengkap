@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+ <title>Latihan css</title>
+ <style>
+
+ /*
+ Properti CSS-klip latar belakang
+Properti latar belakang CSS menentukan tempat gambar latar diposisikan.
+Properti mengambil tiga nilai berbeda:
+
+border-box:border-box - gambar latar belakang dimulai dari sudut kiri batas
+padding-box(default):
+content-box - latar belakang gambar latar belakang dimulai dari sudut kiri atas tepi padding di dalam kotak konten
+*/#example1 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(Bunga.png);
+  background-repeat: no-repeat;
+}
+
+#example2 {
+  border: 10px solid black;
+  padding: 35px;
+  background:url(Bunga.png);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+
+#example3 {
+  border: 10px solid black;
+  padding: 35px;
+  background: url(Bunga.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+ </style>
+</head>
+<body>
+<div id="example1">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>background-origin: border-box:</p>
+<div id="example2">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<p>background-origin: content-box:</p>
+<div id="example3">
+  <h2>Lorem Ipsum Dolor</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+</div>
+</body>
+</html>
+
+

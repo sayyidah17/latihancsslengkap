@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+/*
+Position:static(default), relative, absolute, fixed
+Position static
+*Static adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti position
+*Menggunakan position static (non-static), akan membuat elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya
+*Elemen yang diberi position selain static dapat menggunakan properti top, left, bottom, dan right untuk mengatur posisinya
+Position relative
+*Ketika kita menggerakan elemen dengan posisi relative (menggunakan properti top, right, bottom, left) ruang yang ditempati elemen tersebut masih ada 
+*Ketika kita menggerakan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semulanya
+*Jika kita memberi properti top:0; dan left:0; maka elemen tidak berubah posisinya
+*/
+div{
+	width:200px;
+	height:200px
+}
+.satu{
+	background-color:salmon;
+}
+.dua{
+	background-color:violet;
+	position:relative;
+	top:20px;
+	left:30px;
+}
+.tiga{
+	background-color:gold;
+}
+</style>
+	<title>Latihan CSS Position</title>
+</head>
+<body>
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+</body>
+</html>

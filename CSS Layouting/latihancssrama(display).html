@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+catatan:
+Tag div dan span tidak memiliki arti apapun keduanya digunakan untuk mengelompokkan tag-tag HTML dan memberikan informasi terhadap tag-tag tersebut
+Tag div displaynya adalah block sedangkan span ialah inline
+~Inline
+*Elemen HTML yang secara default tidak menambahka baris baru ketika dibuat
+*Lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+*Kita tidak dapat mengatur tinggi dan lebar dari element inline
+*Margin dan padding hanya mempengaruhi elemen secara horizontal, tidak vertikal
+Elemen inline
+b, strong, i, em, a, span, sub, sup, button, input, label, select, <textarea></textarea>,img(Hanya satu-satunya elemen inline yang dapat diatur width dan height)
+~Inline-block
+*Tidak ada elemen yang secara default memiliki properti diplay:inline-block;
+*Kita harus ubah secara manual properti tersebut
+*Perilaku dasarnya sama dengan elemen inline
+*Perbedaanya, elemen inline-block dapat kita atur tinggi dan lebarnya
+Block
+*Elemen HTML yang secara default menambahkan baris baru ketika dibuat 
+*Jika tidak diatur lebarnya, maka lebar default dari elemen block akan memenuhi lebar dari browser/parentnya
+*Kita dapat mengatur tinggi dan lebar dari elemen block
+*Di dalam elemen block kita dapat menyimpan tag dengan elemen inline, inline-block, atau bahkan elemen block lagi
+Elemen block
+h1-h6, p, ol, ul, li, form, hr, div 	
+~none
+*Digunakan untuk menghilangkan sebuah elemen
+//-->
+	<title>CSS Display</title>
+<style type="text/css">
+	/*display:block, inline, inline-block, none;*/
+	a{
+		background-color:salmon;
+		color:white;
+	}
+    img{
+    	width:200px;
+    	height:200px;
+    }
+    .main {
+    	background-color:lightgreen;
+    	width:600px;
+    }
+    .main h2{
+    	background-color:aqua;
+    }
+    .navigasi li{
+    	display:inline;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Selamat datang di website kami</h1>
+</div>
+<div class="navigasi">
+<h2>Daftar link</h2>
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+</ul>
+</div>
+<div class="main">
+<h2>Judul artikel</h2>
+<img src="Header.jpg">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</body>
+</html> 

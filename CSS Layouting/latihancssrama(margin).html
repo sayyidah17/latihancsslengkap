@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan css margin</title>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<style type="text/css">
+	/*Margin 
+	  Margin adalah area transparan di sekitar kotak (di luar border)
+	  Margin-top
+	  Margin-right
+	  Margin-bottom
+	  Margin-left
+	  overlaping margin
+	  contoh overlaping margin terlihat pada style satu dan dua di style satu terdapat margin-bottom sebesar 150px dan di style kedua teradapat margin bottom sebesar 50px kita dapat lihat bahwa jika digabung margin atas dan bawah menjadi 200px jaraknya namun jarak marginnnya hanya bisa 150px saja itu disebabkan karena margin bottom lebih besar daripada margin top
+	  jika kita mau margin top dan bottomnya dapat digabung jaraknya maka elemennya harus horizontal bukan vertikal.
+	  Negatif margin
+	  Margin-left:-200px;
+	  itu berarti kita memberi jarak 200px ke kiri bukan ke kanan seharusnya kita memberi jarak 200px ke kanan menjadi 200px ke kiri negatif margin berlawanan dengan margin aslinya perlu diketahui bahwa jika kita memberi nilai negatif pada margin top maka elemen yang berada di bawahnya akan mengikuti elemen yang diberi negatif margin top
+	 */
+		.satu{
+	width:200px;
+	height:200px;
+	background-color:aqua;
+	line-height:200px;
+	/*margin-bottom:150px;*/
+	text-align:center;
+	margin:auto;
+}
+.dua{
+    width:100px;
+	height:100px;
+	background-color:red;
+	line-height:100px;
+	text-align:center;
+	/*margin-top:50px;*/
+}
+.tiga{
+    width:50px;
+	height:50px;
+	background-color:yellow;
+	line-height:50px;
+	text-align:center;
+}
+	</style>
+
+</head>
+<body>
+<div class="satu">Satu</div>
+<div class="dua">Dua</div>
+<div class="tiga">Tiga</div>
+</body>

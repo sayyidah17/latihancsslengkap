@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spesifik</title>
+	<!--
+    Setiap deklarasi css (selector) memiliki berat yang berbeda. Berat tersebut menentukan seberapa spesifik sebuah elemen dapat dipilih oleh selector
+	//-->
+	<style type="text/css">
+		/*p {color:orange;}
+		p{color:green;}*/
+		/*Yang terpilih adalah yang hijau karena selector pertama ditimpa oleh selector kedua*/
+	#p1{color:blue;}	
+	p{color:orange;}
+	
+	/*
+	Kenapa yang terpilih #p1 karena #p1 lebih spesifik daripada p
+	kita harus buat perbandingan nilainya seperti berikut ini:
+	     inline   id  class  element
+    #p1=   0       1    0       0    
+                   vs
+     p=    0       0    0       1
+         */
+         ul#sarapan li{
+		color:green;
+	}
+	ul#sarapan li.favorit{
+		color:red;}
+		  /*inline   id  class  element
+		      0       1    0       2  
+		                vs
+		      0       1    1       2
+		  */
+	</style>
+</head>
+<body>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<ul id="sarapan">
+	<li>Nasi uduk</li>
+	<li class="favorit">Bubur ayam</li>
+	<li>Gado-gado</li>
+	<li>Ketoprak</li>
+</ul>
+</body>
+</html>

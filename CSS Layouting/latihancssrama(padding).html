@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan css padding dan border</title>
+<style type="text/css">
+/*
+Padding:area transparan di dalam kotak (antara content dan border)
+        Padding tidak bisa diberi nilai negatif dan auto
+        Padding menambah ukuran elemen
+Border :batas sekliiling content dan padding
+        Penulisan border
+        border:1px solid black;
+               width style color
+        style border
+        solid
+        dotted
+        dashed
+
+*/
+/*div{
+	width:300px;
+	height:300px;
+	background-color:aqua;
+	margin:20px auto;
+	padding:20px;
+	border:1px solid blue;}*/
+	div{
+		width:600px;
+		margin:1px auto;
+		box-sizing:border-box;
+	}
+	.satu{
+		background-color:royalblue;
+		padding:10px;
+		border:5px double red;
+
+	}
+	.dua{
+		background-color:lightgreen;
+		padding:30px;
+		border:10px dotted black;
+	}
+</style>
+</head>
+<body>
+<div class="satu">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<div class="dua">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>

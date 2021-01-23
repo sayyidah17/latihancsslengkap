@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Writing-mode</title>
+<style type="text/css">
+/*
+CSS Writing-mode
+
+Properti mode penulisan CSS menentukan apakah baris teks diletakkan secara horizontal atau vertikal.
+
+Beberapa teks dengan elemen span dengan mode penulisan vertikal-rl.
+
+Contoh berikut menunjukkan beberapa mode penulisan yang berbeda:*/
+p.test1{
+	writing-mode:horizontal-tb;
+}
+span.test{
+	writing-mode:vertical-rl;
+}
+p.test2{
+	writing-mode:vertical-lr;
+}
+</style>
+</head>
+<body>
+<h1>CSS Property writing-mode</h1>
+<p class="test1">Beberapa teks dengan mode penulisan standar</p>
+<p>Beberapa teks dengan elemen span dengan 
+<span class="test">vertical-rl</span>writing-mode</p>
+</body>
+</html>

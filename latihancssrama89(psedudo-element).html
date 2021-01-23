@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo element</title>
+	<style type="text/css">
+/*CSS Pseudo-elements
+Apa itu Pseudo-Elements?
+Elemen pseudo CSS digunakan untuk menata bagian-bagian tertentu dari suatu elemen.
+Misalnya, dapat digunakan untuk:
+Gaya huruf pertama, atau garis, elemen
+Sisipkan konten sebelum, atau setelah, konten suatu elemen
+
+Perhatikan notasi titik dua - :: baris pertama versus: baris pertama
+Kolon ganda menggantikan notasi titik tunggal untuk elemen pseudo di CSS3. Ini adalah upaya dari W3C untuk membedakan antara pseudo-class dan pseudo-elements.
+Sintaks kolon tunggal digunakan untuk pseudo-class dan pseudo-elements dalam CSS2 dan CSS1.
+Untuk kompatibilitas mundur, sintaks kolon tunggal dapat diterima untuk elemen semu CSS2 dan CSS1.
+
+The first::line-line pseudo-element
+
+Elemen :: baris pertama pseudo-elemen digunakan untuk menambahkan gaya khusus ke baris pertama teks.
+Contoh berikut memformat baris pertama teks di semua elemen <p>:
+*/
+/*p::first-line{
+	color:red;
+	font-weight: bold;
+	font-variant:small-caps;
+}*/
+/*
+Catatan: Elemen pseudo lini pertama hanya dapat diterapkan ke elemen tingkat blok.
+Properti berikut ini berlaku untuk :: elemen pseudo::first-line:
+    font properties
+    color properties
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+*/
+/*
+The ::first-letter Pseudo-element
+
+Elemen :: first-letter pseudo digunakan untuk menambahkan gaya khusus ke huruf pertama dari sebuah teks.
+Contoh berikut memformat huruf pertama teks dalam semua elemen <p>:
+
+*/
+/*p::first-letter{
+	color:#ff0000;
+	font-size:xx-large;	
+}*/
+/*
+Catatan: Elemen pseudo-huruf pertama hanya bisa diterapkan ke elemen tingkat blok.
+Properti berikut ini berlaku untuk elemen pseudo-::first-letter:
+	font properties
+    color properties 
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if "float" is "none")
+    text-transform
+    line-height
+    float
+    clear
+*/
+/*
+Pseudo-elements and CSS Classes
+Elemen semu dapat dikombinasikan dengan kelas CSS:
+*/
+/*p.intro::first-letter{
+color:#ff0000;
+font-size:200%;
+}*/
+/*
+CSS - The ::before Pseudo-element
+Elemen :: before pseudo-element dapat digunakan untuk menyisipkan beberapa konten sebelum konten suatu elemen.
+Contoh berikut menyisipkan gambar sebelum konten setiap elemen <h1>:
+*/
+/*h1::before{
+content:"";
+}*/
+/*CSS - The ::after Pseudo-element
+Elemen :: after pseudo-element dapat digunakan untuk menyisipkan beberapa konten setelah konten suatu elemen.
+Contoh berikut menyisipkan gambar setelah konten dari setiap elemen <h1>:*/
+/*h1::after{
+content:"Fajar";
+}*/
+/*
+CSS ::selection Selector
+Elemen pseudo :: selection cocok dengan bagian dari elemen yang dipilih oleh pengguna.
+Properti CSS berikut dapat diterapkan ke :: selection: color, background, cursor, dan outline.
+Contoh berikut membuat teks yang dipilih merah pada latar belakang kuning:*/
+p::selection{
+color:red;
+}
+</style>
+</head>
+<body>
+<p> Anda dapat menggunakan :: elemen pseudo baris pertama untuk menambahkan efek khusus ke baris pertama teks. Lebih banyak teks. Dan bahkan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak, dan lebih banyak lagi. </p>
+<!-- <p class = "intro"> Ini adalah pengantar. </p>
+<p> Ini adalah paragraf dengan beberapa teks. Bahkan lebih banyak teks. </p> -->
+<!-- <h1></h1> -->
+</body>
+</html>

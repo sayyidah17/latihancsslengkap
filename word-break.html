@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <title>css woed-break</title>
+<style>
+/*
+CSS word-break
+Properti word-break  menetapkan aturan melanggar baris.
+*/
+p.test1{
+width:140px;
+border:1px solid #000000;
+word-break:keep-all;
+}
+p.test2{
+width:140px;
+border:1px solid #000000;
+word-break:break-all;
+}
+</style>
+ </head>
+<body>
+<h1>The word-break Property</h1>
+<p>keep-all</p>
+<p class="test1">This paragraph contains some text. This line will-break-at-hyphens.</p>
+<p>break-all</p>
+<p class="test2">This paragraph contains some text. The lines will break at any character.</p>
+
+<p><b>Note:</b> The word-break property is not supported in Opera 12 and earlier versions.</p>
+</body>
+</html>
+

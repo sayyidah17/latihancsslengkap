@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+		Image Sprites
+An image sprite is a collection of images put into a single image.
+A web page with many images can take a long time to load and generates multiple server requests.
+Using image sprites will reduce the number of server requests and save bandwidth.
+Image Sprites - Simple Example
+Instead of using three separate images, we use this single image ("img_navsprites.gif"):
+navigation images
+With CSS, we can show just the part of the image we need.
+In the following example the CSS specifies which part of the "img_navsprites.gif" image to show:
+		
+//-->
+<style type="text/css">
+#home{
+	width:46px;
+	height:44px;
+	background:url(img_navsprites.gif) 0 0;
+}
+#next{
+	width:43px;
+	height:44px;
+	background:url(img_navsprites.gif) -91px 0;
+}
+/*
+Example explained:
+<img id="home" src="img_trans.gif"> - Only defines a small transparent image because the src attribute cannot be empty. The displayed image will be the background image we specify in CSS
+width: 46px; height: 44px; - Defines the portion of the image we want to use
+background: url(img_navsprites.gif) 0 0; - Defines the background image and its position (left 0px, top 0px)*/
+</style>
+	<title>Latihan css image spirit</title>
+</head>
+<body>
+	<img id="home" src="img_trans.gif" width="1" height="1"><br><br>
+	<img id="home" src="img_trans.gif" width="1" height="1">
+</body>
+</html>

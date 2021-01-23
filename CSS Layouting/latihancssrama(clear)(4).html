@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float</title>
+</head>
+<!-- 
+normal flow:padding,margin
+out-of-flow:Float 
+Yang bisa dilakukan menggunakan property float
+#Text wrapping
+ membuat teks menglilingi gambar/elemen lain
+#Image galerry
+ membuat serangkaian gambar menjadi galeri
+#Multi-column layout
+ membuat halaman memiliki beberapa kolom
+#Dll
+ dan masih banyak lagi
+-->
+<style type="text/css">
+.container{
+	width:600px;
+	border:1px solid black;
+	margin:auto;
+	padding:5px;
+}
+img{
+float:left;}
+.satu,.dua,.tiga{
+	width:100px;
+	height:100px;
+}
+.satu{
+	background-color:blue;
+}
+.dua{
+	background-color:salmon;
+	float:right;
+}
+.tiga{
+	background-color:lightskyblue;
+}
+</style>
+<body>
+<div class="container">
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+	
+</div>
+</body>
+</html>

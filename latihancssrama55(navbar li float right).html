@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color:#333;
+	}
+	li{
+		float:left;
+	}
+	li a, .dropbtn{
+		display:block;
+		padding:16px 16px;
+		text-align:center;
+		text-decoration:none;
+		color:white;
+	}
+	li a.active{
+		background-color:#4CAF50;
+	}
+	li a:hover:not(.active), .dropdown:hover {
+    background-color:#111;
+	}
+	li.dropdown{
+		display:inline;
+	}
+	li .dropdown-content{
+		display:none;
+		position:absolute;
+		min-width:160px;
+		box-shadow:0 0 0 rgba(0,0,0,0.2);
+		background-color:#333;
+		z-index:1;
+
+	}
+	li .dropdown-content a{
+		padding:12px 16px;
+		text-align:left;
+		text-decoration:none;
+		display:block;
+
+	}
+	li.dropdown:hover .dropdown-content{
+		display:block;
+	}
+</style>
+	<title>Latihan navbar</title>
+</head>
+<body>
+<h1>Latihan navbar</h1>
+<ul>
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">News</a></li>
+	<li><a href="#">Contact</a></li>
+	<li class="dropdown"><a href="#" class="dropbtn">Menu</a>
+		<div class="dropdown-content">
+			<a href="#">Kuliner</a>
+			<a href="#">Politik</a>
+			<a href="#">Otomotif</a>
+		</div></li>
+	<li style="float:right;"><a href="#">About</a></li>
+</ul>
+</body>
+</html>

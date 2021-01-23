@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Counter</title>
+<style type="text/css">
+/*
+CSS counter adalah "variabel" yang dikelola oleh CSS yang nilainya dapat ditingkatkan dengan aturan CSS (untuk melacak berapa kali mereka digunakan). Penghitung memungkinkan Anda menyesuaikan tampilan konten berdasarkan penempatannya dalam dokumen.
+
+Penomoran Otomatis Dengan Penghitung
+
+Penghitung CSS seperti "variabel". Nilai variabel dapat ditambahkan dengan aturan CSS (yang akan melacak berapa kali mereka digunakan).
+
+Untuk bekerja dengan penghitung CSS, kami akan menggunakan properti berikut:
+*counter-reset:Membuat atau mereset penghitung;
+*counter-increment:Menambah nilai penghitung;
+*content:Sisipan menghasilkan konten;
+*counter() or counters():function - Menambahkan nilai penghitung ke elemen
+
+Untuk menggunakan penghitung CSS, itu harus terlebih dahulu dibuat dengan counter-reset.
+
+Contoh berikut membuat penghitung untuk halaman (dalam pemilih tubuh), lalu menambah nilai penghitung untuk setiap elemen <h2> dan menambahkan ""Section <value of the counter>:" ke awal setiap elemen <h2>:;
+*/
+body{
+	counter-reset:section;
+}
+h2::before{
+	counter-increment:section;
+	content:"Section "counter(section)":";
+}
+</style>
+</head>
+<body>
+<h1>Menggunakan CSS Counters</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>Javascript Tutorial</h2>
+<p> <b> Catatan: </b> IE8 mendukung properti ini hanya jika! DOCTYPE ditentukan. </p>
+</body>
+</html>

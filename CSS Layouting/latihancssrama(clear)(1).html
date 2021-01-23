@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Float</title>
+</head>
+<!-- 
+Cara membersihkan float
+#Menggunakan property overflow
+#Menggunakan div kosong
+#Menggunakan teknik micro clearfix 
+Clear:left right both(left and right)
+-->
+<style type="text/css">
+.container{
+	width:600px;
+	border:1px solid black;
+	margin:auto;
+	overflow:auto;	padding:5px;
+/**/
+}
+img{
+float:left;}
+.clear{
+	clear:left;
+}
+</style>
+<body>
+<div class="container">
+	<img src="Header.jpg">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	</p><div class="clear"></div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+/*
+Position:static(default), relative, absolute, fixed
+Position absolute
+*Ketika kita menggerakan elemen dengan posisi relative (menggunakan properti top, right, bottom, left) ruang yang ditempati elemen tersebut dianggap tidak ada
+*Ketika kita menggerakan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap posisi elemen parent-nya
+ selama elemen parent-nya memilkiki posisi yang juga non-static
+*Jika kita memberi properti top:0; dan left:0; maka elemen akan berada di ujung kiri atas dari element parent-nya
+Position fixed
+*Position fixed ia relatif terhadap element window
+*/
+body{
+	height: 3000px;
+}
+.container{
+	width:600px;
+	height:650px;
+	border:5px solid lightgreen;
+	position:relative;
+
+}
+div{
+	width:200px;
+	height:200px;
+	margin:auto;	
+
+}
+.satu{
+	background-color:salmon; 
+}
+.dua{
+	background-color:violet;
+	top: 0px;
+	left:0px;
+	position:absolute;
+
+}
+.tiga{
+	background-color:gold;
+}
+</style>
+	<title>Latihan CSS Position</title>
+</head>
+<body>
+<div class="container">
+<div class="satu"></div>
+<div class="dua"></div>
+<div class="tiga"></div>
+</div>
+</body>
+</html>
